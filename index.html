@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" data-theme="light" data-font-size="md">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Solo Operator — run a one-person business on ChatGPT</title>
+<meta name="description" content="A verified field guide to running a one-person business with ChatGPT: setup, offers, building sites and apps, and a voice-agent service playbook.">
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('pref-theme'),f=localStorage.getItem('pref-font-size');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(f==='sm'||f==='md'||f==='lg'||f==='xl')d.setAttribute('data-font-size',f);}catch(e){}})();</script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap">
+<link rel="stylesheet" href="assets/css/gub.css">
+<script src="assets/js/prefs.js" defer></script>
+<script src="assets/js/gub.js" defer></script>
+</head>
+<body data-page="home">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html" aria-label="Solo Operator home">
+      <img src="assets/favicon.svg" alt="" width="28" height="28">
+      <span>Solo Operator</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Guide</a>
+      <a href="engine.html">Engine</a>
+    </nav>
+    <div class="prefs" role="group" aria-label="Display settings">
+      <div class="size-group" role="group" aria-label="Text size">
+        <button type="button" class="size-btn size-btn--sm" data-size="sm" aria-pressed="false" aria-label="Small text">A</button>
+        <button type="button" class="size-btn size-btn--md" data-size="md" aria-pressed="true" aria-label="Medium text (selected)">A</button>
+        <button type="button" class="size-btn size-btn--lg" data-size="lg" aria-pressed="false" aria-label="Large text">A</button>
+        <button type="button" class="size-btn size-btn--xl" data-size="xl" aria-pressed="false" aria-label="Extra large text">A</button>
+      </div>
+      <button type="button" class="theme-btn" aria-pressed="false" aria-label="Switch to dark theme">
+        <svg class="theme-btn__moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        <svg class="theme-btn__sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+        <span class="theme-btn__text">Dark</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="hero__kicker">A field guide, checked on 29 September 2026</p>
+        <h1 id="hero-title">Run a one-person business on ChatGPT</h1>
+        <p class="hero__lead">Twenty-six short entries distilled from two September 2026 courses: how to set ChatGPT up properly, shape an offer people pay for, build sites and apps, and run a voice-agent service — with the outdated and risky parts corrected.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#part-setup">Start with setup</a>
+          <a class="btn btn--ghost" href="engine.html">Ask the engine about your situation</a>
+        </div>
+      </div>
+      <nav class="route" aria-labelledby="route-title">
+        <h2 id="route-title" class="route__title">The route</h2>
+        <ol class="route__list" id="route-list">
+          <li class="route__loading">Loading the guide…</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section class="checked" aria-labelledby="checked-title">
+    <div class="checked__inner">
+      <h2 id="checked-title">What we corrected from the source courses</h2>
+      <div class="checked__grid">
+        <article class="note">
+          <h3>Custom GPTs are on the way out</h3>
+          <p>One course builds its sales tools as custom GPTs. OpenAI now plans to retire them on 11 December 2026, so this guide uses projects, skills and plugins instead.</p>
+        </article>
+        <article class="note note--warn">
+          <h3>AI-voice outbound calls need consent</h3>
+          <p>The speed-to-lead and reactivation upsells call people with an AI voice. In the US that requires the person's prior express consent. The course doesn't say so; this guide does.</p>
+        </article>
+        <article class="note">
+          <h3>Sales pitches and income claims left out</h3>
+          <p>Both sources include paid programs, giveaways and personal earnings figures. None of that is here, and industry statistics are flagged to verify before you quote them.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="finder" aria-labelledby="finder-title">
+    <div class="finder__inner">
+      <h2 id="finder-title">Find an entry</h2>
+      <label class="finder__label" for="finder-input">Search titles, summaries and topics</label>
+      <input class="finder__input" id="finder-input" type="search" autocomplete="off" spellcheck="false" placeholder="Try pricing, PRD or cold calling">
+      <p class="finder__count" id="finder-count" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <div id="parts" class="parts">
+    <noscript><p class="notice">This guide loads its entries with JavaScript. Turn JavaScript on to read it.</p></noscript>
+  </div>
+
+  <section class="engine-cta" aria-labelledby="engine-cta-title">
+    <div class="engine-cta__inner">
+      <h2 id="engine-cta-title">Not sure where you fit?</h2>
+      <p>Describe what you sell (or want to), who it's for and what's stuck. The engine asks a question or two, then points you to the right entry with a next step you can do today.</p>
+      <a class="btn btn--primary" href="engine.html">Open the engine</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p>Sources: ChatGPT Mastery Bootcamp, Days 1–2 (Justin Burns, September 2026) and Start a 1-Person Business with ChatGPT (Michele Torti, September 2026), summarized in our own words and checked against OpenAI, Retell AI, Vercel and FCC documentation.</p>
+    <p>Not affiliated with OpenAI or either course. Nothing here is legal or financial advice.</p>
+  </div>
+</footer>
+</body>
+</html>

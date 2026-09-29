@@ -1,0 +1,795 @@
+{
+ "title": "Solo Operator",
+ "subtitle": "A field guide to running a one-person business with ChatGPT",
+ "updated": "2026-09-29",
+ "sections": [
+  {
+   "id": "setup",
+   "title": "Set up ChatGPT to work for you",
+   "intro": "Plans, memory, projects and connections — the groundwork that stops ChatGPT giving generic answers."
+  },
+  {
+   "id": "offer",
+   "title": "Find and shape an offer",
+   "intro": "Pick one road, start from a real problem, and prove people will pay before you build."
+  },
+  {
+   "id": "build",
+   "title": "Build websites and apps",
+   "intro": "A repeatable path from idea to a live URL, using ChatGPT and Codex."
+  },
+  {
+   "id": "agency",
+   "title": "Run a voice-agent service business",
+   "intro": "The four-hour course's full playbook: offer, niche, pricing, outreach, sales and delivery."
+  },
+  {
+   "id": "mindset",
+   "title": "Stay in the game",
+   "intro": "Why most people stop before the first paying client, and what to do instead."
+  }
+ ],
+ "entries": [
+  {
+   "id": "setup-plans",
+   "section": "setup",
+   "title": "Pick the plan that matches the work",
+   "summary": "Plus at $20 a month is the practical floor for this playbook. Move to Pro only when you hit usage limits every week.",
+   "body": [
+    "Free and Go handle everyday chat, but the workflows in this guide lean on projects, scheduled tasks, ChatGPT Work, plugins and Codex. On OpenAI's pricing page (checked 29 September 2026), Plus is where those open up fully, along with the GPT-6 reasoning models.",
+    "Pro starts at $100 a month, with a larger $200 tier, and mainly buys more usage. Start on Plus, watch the usage meter in settings, and upgrade only when limits get in the way of real work.",
+    "Install the desktop app from chatgpt.com/download. Codex and ChatGPT Work run best there, and both source courses demo from it.",
+    "Choose effort deliberately. Try a lighter reasoning setting first and raise it only when the answer isn't good enough; higher effort uses your limit faster."
+   ],
+   "tags": [
+    "pricing",
+    "plans",
+    "plus",
+    "pro",
+    "codex",
+    "desktop app",
+    "setup",
+    "limits"
+   ],
+   "details": {
+    "Minimum plan": "Plus, $20/month",
+    "Upgrade when": "You hit caps every week",
+    "Install": "Desktop app for Mac or Windows",
+    "Checked": "chatgpt.com/pricing, 29 Sep 2026"
+   },
+   "source": "ChatGPT Mastery Bootcamp, Days 1–2 (Justin Burns, livestream, Sept 2026)"
+  },
+  {
+   "id": "setup-memory",
+   "section": "setup",
+   "title": "Custom instructions and memory",
+   "summary": "Two separate layers. Custom instructions are a standing brief you write once; memory learns from your chats. Fill both before asking for real work.",
+   "body": [
+    "Out of the box, ChatGPT knows nothing about you, so it answers as if it's talking to a stranger. That's where generic output and wasted messages come from.",
+    "Custom instructions live under Settings → Personalization and stay until you change them. Cover who you are, what you do, how you like things explained, your goals, and what to avoid. The same screen sets base style and tone.",
+    "Memory builds up from conversations and can be reviewed and edited under Manage. Keep it to working facts about your business, and leave out anything sensitive.",
+    "The fast way to fill both: let ChatGPT interview you. Say you want it to understand you and your business well enough to give specific advice, and ask it to question you one topic at a time. Answer by voice if you can. Then ask it to write your custom instructions and a memory summary from the interview, and paste them in."
+   ],
+   "tags": [
+    "memory",
+    "custom instructions",
+    "personalization",
+    "profile",
+    "setup",
+    "generic answers",
+    "voice",
+    "dictation"
+   ],
+   "details": {
+    "Where": "Settings → Personalization",
+    "Time needed": "20–30 minutes",
+    "Ask": "Interview me about my business, one topic at a time, then draft my custom instructions.",
+    "Leave out": "Passwords, health, family details"
+   },
+   "source": "ChatGPT Mastery Bootcamp, Days 1–2 (Justin Burns, livestream, Sept 2026)"
+  },
+  {
+   "id": "setup-projects-os",
+   "section": "setup",
+   "title": "Turn projects into an operating system",
+   "summary": "Set up a few pinned projects — agency, market research, delivery, finance — each with its own role, files and memory.",
+   "body": [
+    "A project is a folder of chats that share instructions and files. Treat each one as a department with a single job.",
+    "The four-hour course uses four: an Agency project for inbox, calendar and CRM; a Market Research project for niches, competitors and pricing; a Delivery project for client builds and deadlines; and a Finance project for payment links, invoices and revenue. Give each a short role statement and pin it.",
+    "When you create a project you choose between shared memory and project-only memory. Use project-only for client work so details don't bleed between contexts.",
+    "Load projects with reference material: sites you admire, past proposals, PDFs of books you want ideas from. The more it has, the less you explain every time.",
+    "Add a simple CRM in Notion or Google Sheets with stages for new lead, discovery call, proposal call, onboarding and delivery. With plugins connected, ChatGPT can read and update it."
+   ],
+   "tags": [
+    "projects",
+    "operating system",
+    "crm",
+    "notion",
+    "files",
+    "swipe file",
+    "organization",
+    "setup"
+   ],
+   "details": {
+    "Start with": "Agency, Market Research, Delivery, Finance",
+    "Memory": "Project-only for client work",
+    "CRM stages": "New lead → Discovery → Proposal → Onboarding → Delivery"
+   },
+   "source": "Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026); ChatGPT Mastery Bootcamp, Days 1–2 (Justin Burns, livestream, Sept 2026)"
+  },
+  {
+   "id": "setup-plugins",
+   "section": "setup",
+   "title": "Plugins, skills and scheduled tasks",
+   "summary": "Plugins connect ChatGPT to your tools, skills store repeatable instructions, and scheduled tasks run jobs without you.",
+   "body": [
+    "Plugins are connections to tools such as Gmail, Google Calendar, Drive, Sheets, Notion, GitHub, Vercel and Stripe. Once connected, ChatGPT can summarize your inbox, add a row to a sheet or deploy a site from a chat. Tag a plugin with @ to point a request at one tool.",
+    "ChatGPT Work is the mode that carries out multi-step tasks with those tools. Plain chat is for thinking and drafting.",
+    "Skills (in beta) are saved instructions — written procedures you reuse. Good first candidates: your proposal format, your weekly client update, your testing checklist.",
+    "Scheduled tasks run on a timer: a morning inbox summary, a daily check for new payments, a weekly competitor scan.",
+    "Before relying on a plugin, ask ChatGPT to list every action it can take. You'll learn what's possible and what isn't — for example, a booking tool that can create appointments but not cancel them.",
+    "Only connect accounts you're comfortable letting an assistant read, and disconnect what you stop using."
+   ],
+   "tags": [
+    "plugins",
+    "mcp",
+    "skills",
+    "scheduled tasks",
+    "automation",
+    "gmail",
+    "calendar",
+    "notion",
+    "chatgpt work",
+    "integrations"
+   ],
+   "details": {
+    "Connect first": "Gmail, Calendar, Drive/Sheets, Notion",
+    "For real work": "ChatGPT Work mode",
+    "First question": "List every action this plugin can take.",
+    "Scheduled tasks": "Go plan and above"
+   },
+   "source": "Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026); ChatGPT Mastery Bootcamp, Days 1–2 (Justin Burns, livestream, Sept 2026)"
+  },
+  {
+   "id": "setup-gpts-retiring",
+   "section": "setup",
+   "title": "Custom GPTs are retiring",
+   "summary": "OpenAI plans to retire custom GPTs on 11 December 2026. Build new reusable assistants as projects, skills or plugins instead.",
+   "body": [
+    "The four-hour course builds several custom GPTs for sales and outreach. That advice has already aged. OpenAI's help center says custom GPTs are scheduled to retire on 11 December 2026 and recommends moving to plugins; creation of new GPTs is planned to end on 26 October 2026. Enterprise workspaces with an approved deferral get until 11 February 2027.",
+    "Instead: put the instructions and knowledge files into a project for your own use, save the repeatable procedure as a skill, or package it as a plugin when you need to share it or connect tools.",
+    "If you already have GPTs, use the migration option in My GPTs and test the result. Conversations, the chosen model and custom actions don't carry over automatically."
+   ],
+   "tags": [
+    "custom gpts",
+    "gpts",
+    "retirement",
+    "plugins",
+    "migration",
+    "skills",
+    "projects"
+   ],
+   "details": {
+    "Retirement": "11 Dec 2026",
+    "New GPT creation ends": "26 Oct 2026 (planned)",
+    "Replace with": "Projects, skills or plugins",
+    "Checked": "OpenAI help center FAQ, 29 Sep 2026"
+   },
+   "source": "OpenAI help center, Custom GPT retirement and migration FAQ; corrects Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026)"
+  },
+  {
+   "id": "offer-roads",
+   "section": "offer",
+   "title": "Choose one road before choosing tools",
+   "summary": "Making money with AI comes in a few distinct shapes. Pick one and ignore the rest until it pays.",
+   "body": [
+    "Using AI tools and building with them are different things; the income is in the second. It usually takes one of a few shapes: services for other businesses (websites, automations, agents), digital products (apps, courses, templates), consulting and coaching, or your own brand.",
+    "The four-hour course narrows AI services to five roads — AI creatives, vibe-coded websites or custom software, voice and chat agents, AI consulting, and workflow automation — and rules most out for beginners. Creatives price low, websites are commoditized, enterprise software and consulting need authority and long sales cycles, and custom automations suffer from scope creep.",
+    "It lands on voice agents: a clear, expensive problem (missed calls), a repeatable build, and tools that became good enough around 2025.",
+    "Whatever you choose, choosing is the point. One road lets you stop chasing every launch and focus on a single offer."
+   ],
+   "tags": [
+    "opportunity",
+    "business model",
+    "voice agents",
+    "websites",
+    "consulting",
+    "automation",
+    "digital products",
+    "focus",
+    "beginner"
+   ],
+   "details": {
+    "Roads": "Creatives, sites/software, voice agents, consulting, automations",
+    "Course's beginner pick": "Voice agents",
+    "Rule": "One road until it pays"
+   },
+   "source": "Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026); ChatGPT Mastery Bootcamp, Days 1–2 (Justin Burns, livestream, Sept 2026)"
+  },
+  {
+   "id": "offer-problem-first",
+   "section": "offer",
+   "title": "Start from the problem, not the tool",
+   "summary": "Work backward: problem, then who has it, then how to reach them, then what to build, then which tools.",
+   "body": [
+    "The usual order is tools first, then \"what could I build?\", then \"who for?\". It's backward, and it's why people stay stuck in tutorials.",
+    "A business moves a customer from where they are to where they want to be. The gap between the two is the problem, and the bigger the gap, the more they'll pay to close it.",
+    "So pick the problem, find the niche where it's most expensive, work out how you'll reach them, then decide the delivery. Tools come last.",
+    "A quick test: can you describe the problem in the customer's own words and put a monthly cost on it? If not, keep researching before building anything."
+   ],
+   "tags": [
+    "problem",
+    "niche",
+    "strategy",
+    "order",
+    "validation",
+    "customer",
+    "value"
+   ],
+   "details": {
+    "Order": "Problem → Niche → Lead source → Delivery → Tools",
+    "Test": "Can you price the problem per month?"
+   },
+   "source": "Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026)"
+  },
+  {
+   "id": "offer-four-elements",
+   "section": "offer",
+   "title": "An offer answers four questions",
+   "summary": "Skill, audience, problem, package. When all four are clear, you have the confidence to sell it.",
+   "body": [
+    "Skill: what you can actually deliver, yourself or reliably with AI.",
+    "Audience: exactly who you serve. Narrow beats broad.",
+    "Problem: the specific pain they'll pay to remove. People pay for solved problems, not features.",
+    "Package and price: how it's delivered, what it costs, and what makes yes easy.",
+    "One strong offer is enough to start. Several income streams at once usually means none gets finished.",
+    "Write it as one sentence: we help a specific audience get a specific result through a specific method within a time frame, backed by a guarantee. If you can't write that sentence, you're not ready to pitch."
+   ],
+   "tags": [
+    "offer",
+    "positioning",
+    "pricing",
+    "package",
+    "audience",
+    "clarity",
+    "guarantee"
+   ],
+   "details": {
+    "Four questions": "Skill, audience, problem, package and price",
+    "Offer sentence": "We help [who] get [result] via [how] in [time], or [guarantee].",
+    "How many offers": "One"
+   },
+   "source": "ChatGPT Mastery Bootcamp, Days 1–2 (Justin Burns, livestream, Sept 2026); Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026)"
+  },
+  {
+   "id": "offer-ideas",
+   "section": "offer",
+   "title": "Generate ideas, then argue with them",
+   "summary": "With memory set up, ask for realistic revenue ideas based on what ChatGPT knows about you — then make it attack its best one.",
+   "body": [
+    "Once your custom instructions and memory are filled in, ask for around ten realistic ways you could earn, split between things you could sell yourself and things you could build for other people. The quality depends on how well it knows you.",
+    "Don't fall for the first idea. Ask it to argue against its top pick: the risks, blind spots, untested assumptions and likely reasons it fails. Keep whatever survives.",
+    "Then go straight to validation. Ideas are cheap; execution is what counts."
+   ],
+   "tags": [
+    "ideas",
+    "brainstorm",
+    "revenue",
+    "devil's advocate",
+    "risk",
+    "memory"
+   ],
+   "details": {
+    "Ask for": "About 10 ideas, for yourself and for clients",
+    "Then": "Devil's advocate on the top pick",
+    "Needs": "Memory and custom instructions set first"
+   },
+   "source": "ChatGPT Mastery Bootcamp, Days 1–2 (Justin Burns, livestream, Sept 2026)"
+  },
+  {
+   "id": "offer-validate",
+   "section": "offer",
+   "title": "Validate before you build",
+   "summary": "Use deep research for the market picture, then get real signals from real people.",
+   "body": [
+    "Deep research can do in an afternoon what used to take weeks: list competitors, compare pricing, pull themes from customer reviews, summarize trends and point out gaps. Ask for a structured report.",
+    "Read competitors' reviews on purpose. The complaints tell you what to build and what to promise.",
+    "A compliment isn't validation; an action is. Message ten potential customers, publish one post, open one waitlist, have one real conversation. Behavior beats assumptions.",
+    "Sites that list verified revenue for small software products are useful for seeing what kinds of tools sell. Treat them as inspiration, not proof your version will work."
+   ],
+   "tags": [
+    "validation",
+    "deep research",
+    "competitors",
+    "reviews",
+    "market research",
+    "waitlist",
+    "signals"
+   ],
+   "details": {
+    "Research": "Competitors, pricing, reviews, gaps — as a report",
+    "Real signals": "10 messages, 1 post, 1 waitlist, 1 conversation",
+    "Not validation": "Compliments"
+   },
+   "source": "ChatGPT Mastery Bootcamp, Days 1–2 (Justin Burns, livestream, Sept 2026)"
+  },
+  {
+   "id": "build-website",
+   "section": "build",
+   "title": "Build a website in four passes",
+   "summary": "Plan, write, brief the design, then build — and make ChatGPT review its own work before it finishes.",
+   "body": [
+    "The biggest quality jump comes from not letting ChatGPT build straight away. Each pass gives the next one something concrete to work from.",
+    "Plugins can add generated imagery or animation; check what's in your plugin directory. Websites sell to local businesses, but the four-hour course warns they're commoditized and hard to price high on their own."
+   ],
+   "steps": [
+    "Plan: tell it not to build yet. Have it act as a conversion strategist and UX designer, use what it knows about you and your offer, define the page's main goal, and outline every section — hero, proof, who it's for, how it works, offer, about, call to action.",
+    "Write: have it draft the copy for that outline in your voice.",
+    "Design brief: ask for a direction covering palette, type, layout and motion. Attach screenshots of sites you admire.",
+    "Build and review: build from the approved copy and brief, then check clarity, consistency, mobile layout, visible calls to action, broken sections, readability and flow — and report exactly what was built."
+   ],
+   "tags": [
+    "website",
+    "landing page",
+    "design",
+    "copywriting",
+    "ux",
+    "build",
+    "prompts",
+    "mobile"
+   ],
+   "details": {
+    "Passes": "Plan → Write → Design brief → Build and review",
+    "Key instruction": "Outline first — do not build yet",
+    "Review checklist": "Mobile, calls to action, broken sections, readability"
+   },
+   "source": "ChatGPT Mastery Bootcamp, Days 1–2 (Justin Burns, livestream, Sept 2026)"
+  },
+  {
+   "id": "build-app-roadmap",
+   "section": "build",
+   "title": "The six-phase app roadmap",
+   "summary": "Idea, PRD, GitHub, build, test, deploy. Most of the time goes into looping between build and test.",
+   "body": [
+    "In Codex, install the GitHub and Vercel plugins so it can push your code and deploy for you.",
+    "The bootcamp recommends a web app over a native mobile app for a first build: simpler to ship, and it can become a mobile app later."
+   ],
+   "steps": [
+    "Idea: a validated one (see Validate before you build).",
+    "PRD: a product requirements document, the single source of truth for what the app does.",
+    "GitHub: a free account and a repository, so your code lives somewhere you control.",
+    "Build: in Codex, one feature at a time.",
+    "Test: check each feature and fix bugs. Expect to bounce between build and test for a while.",
+    "Deploy: connect the repository to Vercel for a live URL, then add your own domain."
+   ],
+   "tags": [
+    "app",
+    "roadmap",
+    "codex",
+    "github",
+    "vercel",
+    "deploy",
+    "saas",
+    "web app",
+    "build"
+   ],
+   "details": {
+    "Phases": "Idea, PRD, GitHub, Build, Test, Deploy",
+    "Hosting": "Vercel, free tier to start",
+    "Code storage": "GitHub, free",
+    "First target": "Web app, not native mobile"
+   },
+   "source": "ChatGPT Mastery Bootcamp, Days 1–2 (Justin Burns, livestream, Sept 2026)"
+  },
+  {
+   "id": "build-prd",
+   "section": "build",
+   "title": "Write a PRD by being interviewed",
+   "summary": "Have ChatGPT act as a senior product manager, interview you in short rounds, and then write the PRD.",
+   "body": [
+    "Give it your rough idea and ask it to interview you before writing anything — a few questions per round, one round at a time. Cover the user, the problem, the single most important thing the user does, must-have features, what data is stored, whether accounts are needed, the look and feel, and what done looks like for version one.",
+    "\"What does done look like?\" is the question most people skip, and it's why apps never ship: features keep getting added.",
+    "Read its assumptions and correct them. In the bootcamp demo it defaulted to a native mobile app until told otherwise.",
+    "Then ask for the PRD itself: user flow, user stories, version-one features, an explicit out-of-scope list and the data model. Answering by voice makes the interview much faster."
+   ],
+   "tags": [
+    "prd",
+    "product requirements",
+    "planning",
+    "scope",
+    "user stories",
+    "app",
+    "interview"
+   ],
+   "details": {
+    "Role to assign": "Senior product manager",
+    "Interview style": "3–5 questions per round",
+    "Must define": "What done looks like for v1",
+    "Output": "User flow, stories, v1 features, out of scope, data model"
+   },
+   "source": "ChatGPT Mastery Bootcamp, Days 1–2 (Justin Burns, livestream, Sept 2026)"
+  },
+  {
+   "id": "build-rules",
+   "section": "build",
+   "title": "Six rules for building with AI",
+   "summary": "Small steps, named problems, protected working code, defined behavior, self-checks, and the PRD as source of truth.",
+   "body": [
+    "For the first build prompt, hand over the PRD and ask for step one only: the core flow and data model, minimal styling, nothing out of scope, tested when done. After that the loop is build, test, save, next feature."
+   ],
+   "steps": [
+    "One job per prompt.",
+    "Name problems, not vibes: \"the save button does nothing on mobile\" beats \"make it better\".",
+    "Fence off what works: end each change request with what must stay exactly as it is.",
+    "Define behavior: describe what should happen, step by step.",
+    "Make it verify: ask it to test its own change and report what it checked.",
+    "Keep the PRD as the source of truth. When scope changes, update the PRD first."
+   ],
+   "tags": [
+    "rules",
+    "prompting",
+    "codex",
+    "bugs",
+    "build",
+    "process",
+    "vibe coding"
+   ],
+   "details": {
+    "Loop": "Build → Test → Save → Next feature",
+    "First prompt": "PRD plus step one only, minimal styling, then test"
+   },
+   "source": "ChatGPT Mastery Bootcamp, Days 1–2 (Justin Burns, livestream, Sept 2026)"
+  },
+  {
+   "id": "build-test",
+   "section": "build",
+   "title": "Review your build like a product manager",
+   "summary": "When the first screen appears, stop prompting and start inspecting.",
+   "body": [
+    "The AI did the typing; your job now is judging whether it's a product you'd put your name on. Write each finding as a named problem and fix them one prompt at a time.",
+    "Codex can also run scheduled tasks, such as a test pass overnight."
+   ],
+   "steps": [
+    "Features: does it match the PRD, with nothing extra?",
+    "Mobile: does it work properly on a phone?",
+    "Errors: what breaks, and where?",
+    "Empty states: when there's no data yet, does the screen tell the user what to do?",
+    "Usability: could someone who isn't you use it without help?"
+   ],
+   "tags": [
+    "testing",
+    "qa",
+    "bugs",
+    "mobile",
+    "usability",
+    "empty states",
+    "product manager"
+   ],
+   "details": {
+    "Checklist": "PRD features, mobile, errors, empty states, usability",
+    "Fix style": "One named problem per prompt"
+   },
+   "source": "ChatGPT Mastery Bootcamp, Days 1–2 (Justin Burns, livestream, Sept 2026)"
+  },
+  {
+   "id": "agency-offer",
+   "section": "agency",
+   "title": "The revenue recovery offer",
+   "summary": "Main offer: an after-hours AI receptionist. Upsells: fast callbacks for new leads, and reactivating old ones.",
+   "body": [
+    "The core problem is unanswered inbound calls. For businesses where a call is a customer, every missed call is lost revenue.",
+    "Main offer: a 24/7 AI receptionist that answers, qualifies, handles common questions, books appointments and can hand off to a person.",
+    "Upsell one, speed to lead: when someone fills in a form or ad, an agent calls back within minutes, while they're still interested. Upsell two, reactivation: call leads already sitting in the business's CRM with a relevant offer, instead of buying new ones.",
+    "Present it as solving a revenue problem, not as an AI receptionist agency. The upsells exist because one client served for many months beats ten one-off projects you have to replace every month.",
+    "Compliance warning, not covered in the course: both upsells are outbound calls made with an AI voice. In the US, the FCC's February 2024 ruling places AI-generated voices under the TCPA's artificial-voice rules, which require the called person's prior express consent, plus caller identification and an opt-out for marketing calls. Confirm consent for every list and get legal advice for your market."
+   ],
+   "tags": [
+    "ai receptionist",
+    "voice agent",
+    "missed calls",
+    "speed to lead",
+    "lead reactivation",
+    "upsell",
+    "offer",
+    "compliance",
+    "tcpa",
+    "consent"
+   ],
+   "details": {
+    "Main": "After-hours AI receptionist",
+    "Upsell 1": "Speed-to-lead callbacks",
+    "Upsell 2": "Old-lead reactivation",
+    "Compliance": "Outbound AI-voice calls need prior express consent (US)"
+   },
+   "warning": "Outbound AI-voice calls (speed to lead, reactivation) need the called person's prior express consent under US rules. The source course doesn't mention this.",
+   "source": "Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026); FCC declaratory ruling on AI voices, Feb 2024"
+  },
+  {
+   "id": "agency-niche",
+   "section": "agency",
+   "title": "Pick a niche where one customer is worth a lot",
+   "summary": "High average-order-value niches make the value of one recovered call obvious.",
+   "body": [
+    "Good fits: home services such as HVAC, plumbing, roofing and restoration; implant and cosmetic dentistry; med spas. One job can be worth thousands.",
+    "Poor fits: restaurants, barbers, nail salons, hotels and e-commerce. Each customer is worth little, so you'd need huge call volume to justify your fee.",
+    "Use your Market Research project with deep research to rank niches by missed-call rates, customer value and ability to pay. The course's research put HVAC first: urgent calls arrive outside office hours, and owners often answer their own phones, which makes them reachable.",
+    "Missed-call statistics circulate widely online. Trace any figure to its original source before quoting it to a prospect."
+   ],
+   "tags": [
+    "niche",
+    "aov",
+    "hvac",
+    "dental",
+    "med spa",
+    "roofing",
+    "home services",
+    "market research"
+   ],
+   "details": {
+    "Good": "HVAC, plumbing, roofing, dental implants, med spas",
+    "Avoid": "Restaurants, salons, barbers, e-commerce",
+    "Course's first niche": "HVAC"
+   },
+   "source": "Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026)"
+  },
+  {
+   "id": "agency-pricing",
+   "section": "agency",
+   "title": "Price in stages, then by value",
+   "summary": "Start free to earn proof, move to value-based pricing as soon as you can defend it, and keep clients on retainer.",
+   "body": [
+    "The questions that unlock every price: how many calls are missed a day, what the close rate is, what an average customer spends, and who answers the phone now."
+   ],
+   "steps": [
+    "Free pilots: for the first few clients, trade the work for a testimonial and two referrals.",
+    "Hourly: easy to close early on, but it rewards being slow and frustrates clients.",
+    "Value-based: for time saved, multiply hours saved per week by hourly cost by 52 and charge 20–25% of that yearly figure. For added revenue, charge around 10% of the extra yearly revenue. The course's example: a reactivation campaign on 1,000 old leads converting 8 at $2,000 each recovers $16,000.",
+    "Retainer: monthly support, fixes and small upgrades. The course quotes $1,500–3,000 a month for small businesses. Clients stay 6–18 months if you keep solving problems."
+   ],
+   "tags": [
+    "pricing",
+    "value-based pricing",
+    "retainer",
+    "hourly",
+    "free pilot",
+    "roi",
+    "proposal"
+   ],
+   "details": {
+    "Time-saved price": "20–25% of yearly savings",
+    "Revenue price": "About 10% of added yearly revenue",
+    "Retainer (course figure)": "$1.5k–3k/month for small businesses",
+    "Frame it as": "We aim for at least a 10x return on your fee"
+   },
+   "source": "Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026)"
+  },
+  {
+   "id": "agency-guarantee",
+   "section": "agency",
+   "title": "Offer a guarantee you can control",
+   "summary": "Conditional and performance guarantees lower the client's risk without handing them an open-ended refund.",
+   "body": [
+    "An unconditional refund suits finished software, not a service you build by hand.",
+    "Conditional: if it isn't live within 30 days of onboarding being completed, they don't pay. Performance: tied to a measurable result, with clear minimums on inputs — for example, a share of eligible calls answered, provided call volume reaches a stated level. Implied: unlimited tweaks until it runs smoothly.",
+    "State the conditions plainly and keep the promise realistic. A guarantee also pushes you to deliver well.",
+    "Example offer line: we help HVAC companies stop missing inbound calls with a 24/7 AI receptionist that books jobs, live within 30 days and done for you."
+   ],
+   "tags": [
+    "guarantee",
+    "risk reversal",
+    "offer",
+    "conditional",
+    "performance",
+    "refund"
+   ],
+   "details": {
+    "Use": "Conditional plus performance",
+    "Avoid": "Unconditional refunds on custom builds",
+    "Must include": "Clear conditions on inputs"
+   },
+   "source": "Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026)"
+  },
+  {
+   "id": "agency-warm",
+   "section": "agency",
+   "title": "Warm outreach and networking",
+   "summary": "First clients usually come from people who know you — or from people they know.",
+   "body": [
+    "Export your phone contacts into a sheet; ChatGPT with the Google Contacts and Sheets plugins can set this up, or you can import a CSV. Split them into close group, other people and business owners, and add a status column.",
+    "Call business owners and your close group; text everyone else. Say you've started helping a specific kind of business stop losing customers to missed calls, that you're opening a few pilot spots in exchange for testimonials, and ask whether they know anyone who'd want one.",
+    "The real value is often second-degree: people your contacts know and you don't.",
+    "For events, look for niche trade associations, chambers of commerce, BNI chapters and business breakfasts. Ask ChatGPT to find ones near you and list them in a sheet with dates and registration links. At the event, spend about ten minutes with each owner asking about them, and aim for a follow-up conversation rather than a pitch."
+   ],
+   "tags": [
+    "warm outreach",
+    "referrals",
+    "contacts",
+    "networking",
+    "events",
+    "first client",
+    "bni",
+    "chamber of commerce"
+   ],
+   "details": {
+    "Sheet tabs": "Close group, Other people, Business owners",
+    "Channels": "Call owners and close contacts; text the rest",
+    "Events": "Trade groups, chambers, BNI, niche meetups"
+   },
+   "source": "Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026)"
+  },
+  {
+   "id": "agency-cold",
+   "section": "agency",
+   "title": "Loaded cold calling",
+   "summary": "Call after hours first to confirm the problem exists, then call in the daytime with that context.",
+   "body": [
+    "Build a list by scraping Google Maps for your niche and city with a scraper marketplace (the course uses Apify, whose free monthly credit covered a first list at the time of recording), then import it into a call-tracking sheet.",
+    "Triage: call each business around 7–8 pm their time. If a person answers, cross them off — they don't have the problem. If nobody answers, mark it. Never claim you called when you didn't.",
+    "Log which stage each call ends at and the objection you heard, then practice the stage you lose most often. Volume matters: aim for 20–30 conversations a day.",
+    "Business-to-business calls still have rules in many places, including state telemarketing laws and do-not-call lists. Check what applies before you dial."
+   ],
+   "steps": [
+    "Open softly and conversationally, asking for a moment of help rather than pitching.",
+    "Mention you called after hours and nobody answered, and ask who looks after call coverage outside office hours.",
+    "If that's them, describe what you set up in one sentence and check it makes sense.",
+    "Ask how they handle calls now, then offer two specific times for a short follow-up call."
+   ],
+   "tags": [
+    "cold calling",
+    "outbound",
+    "script",
+    "lead list",
+    "apify",
+    "google maps",
+    "objections",
+    "sales"
+   ],
+   "details": {
+    "Triage window": "7–8 pm local time",
+    "Daily target": "20–30 conversations",
+    "Track": "Stage reached and objection",
+    "List source": "Google Maps scrape"
+   },
+   "source": "Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026)"
+  },
+  {
+   "id": "agency-two-call",
+   "section": "agency",
+   "title": "The two-call close",
+   "summary": "A discovery call decides whether you can help. A proposal call shows how.",
+   "body": [
+    "Discovery takes 20–30 minutes. Set the frame first: you'll ask some questions, and you'll say honestly whether you can help. Then dig into the numbers — calls missed per day, average order value, close rate, who answers now and what that person could be doing instead. Ask why it matters to them; people decide emotionally even when the math is logical.",
+    "Summarize what you heard and check it's right. If the problem is big enough, book the proposal call, ideally within two days while the pain is fresh.",
+    "In the proposal call, restate their pain in their words, walk through the math with their own numbers (conservatively), then present the solution, price and guarantee.",
+    "Your Agency project can draft the proposal from discovery notes and review call recordings for what to improve."
+   ],
+   "tags": [
+    "sales",
+    "discovery call",
+    "proposal",
+    "closing",
+    "objections",
+    "sales call",
+    "numbers"
+   ],
+   "details": {
+    "Call 1": "Discovery — is there a problem worth solving?",
+    "Call 2": "Proposal — here's how, at this price",
+    "Gap": "About two days",
+    "Collect": "Missed calls, AOV, close rate"
+   },
+   "source": "Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026)"
+  },
+  {
+   "id": "agency-build",
+   "section": "agency",
+   "title": "Build the AI receptionist",
+   "summary": "A voice agent is a prompt, a voice and a set of tools. The course builds it in Retell AI, driven from ChatGPT.",
+   "body": [
+    "The parts: the prompt, which holds the instructions and matters most; the settings, meaning voice, language model and latency; and the tools, the actions it can take such as answering questions, booking, rescheduling or transferring.",
+    "Retell AI is a platform for building and deploying phone agents; it offers an MCP server and handles booking through Cal.com. The course connects it through ChatGPT's plugin directory so the Delivery project can create and edit agents by chat. Check the integration is available in your account.",
+    "Ask the plugin to list every action it supports, then create a simple agent with the business name, tone, services and booking rules. Pick a natural-sounding voice and watch latency: around three seconds of delay is noticeable. Keep the prompt in the same language the agent speaks.",
+    "Buy a local number in the client's area, or connect their existing number through SIP trunking, attach the agent and call it. Expect failures: the demo's first bookings failed and were diagnosed from the call history. Testing is most of the job."
+   ],
+   "tags": [
+    "retell",
+    "voice agent",
+    "ai receptionist",
+    "cal.com",
+    "build",
+    "delivery",
+    "latency",
+    "phone number",
+    "sip"
+   ],
+   "details": {
+    "Platform": "Retell AI",
+    "Booking": "Cal.com",
+    "Phone": "Local number or SIP trunk",
+    "Watch": "Latency, booking errors, voice quality"
+   },
+   "source": "Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026)"
+  },
+  {
+   "id": "agency-deliver",
+   "section": "agency",
+   "title": "Onboarding, updates and retention",
+   "summary": "Client experience decides whether they stay, buy the next thing and refer you.",
+   "body": [
+    "Run onboarding as a call. Emailed instructions and videos stall; a one-to-two-hour screen share where the client signs up to every tool gets it done.",
+    "On that call, set expectations: the timeline with milestones, and exactly when you reply to messages. Unhappy clients are almost always mismatched expectations. Have the client own usage-based accounts such as the voice platform, and warn them about small testing costs up front.",
+    "Split the build into weekly milestones — structure, build, test, deploy — and send an update every week without being asked. ChatGPT with Gmail connected can draft and send these.",
+    "Testing takes one to two weeks; give the client the test number and ask for feedback. At handoff, plan the next problem you'll solve for them. Ongoing work plus a retainer beats starting from zero every month."
+   ],
+   "tags": [
+    "onboarding",
+    "delivery",
+    "client experience",
+    "retention",
+    "updates",
+    "milestones",
+    "upsell",
+    "retainer"
+   ],
+   "details": {
+    "Onboarding": "1–2 hour call, tools set up live",
+    "Milestones": "Structure → Build → Test → Deploy",
+    "Updates": "Weekly, unprompted",
+    "Testing": "1–2 weeks, client involved"
+   },
+   "source": "Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026)"
+  },
+  {
+   "id": "mindset-cycle",
+   "section": "mindset",
+   "title": "Expect the dip",
+   "summary": "Most people quit at the low point between \"this is harder than I thought\" and their first paying clients.",
+   "body": [
+    "The pattern: excitement before you know what's involved, then discouragement once you do, then a low point where many people switch to the next business model and start the loop again.",
+    "Getting through usually means landing your first two or three paying clients. After that, optimism comes back, and this time it's informed.",
+    "No prompt makes money on its own. This is a service business: you'll talk to people, many will say no, and results take weeks of steady effort.",
+    "Consistency beats talent. Most people stop when it gets uncomfortable; staying in is the advantage."
+   ],
+   "tags": [
+    "mindset",
+    "motivation",
+    "consistency",
+    "quitting",
+    "first client",
+    "patience"
+   ],
+   "details": {
+    "Low point": "Before the first 2–3 paid clients",
+    "What helps": "Consistent daily activity",
+    "Warning sign": "Switching business models"
+   },
+   "source": "Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026); ChatGPT Mastery Bootcamp, Days 1–2 (Justin Burns, livestream, Sept 2026)"
+  },
+  {
+   "id": "mindset-leverage",
+   "section": "mindset",
+   "title": "Selling is now the scarce skill",
+   "summary": "Building with AI has become easy. The advantage has moved to offers, sales and business basics.",
+   "body": [
+    "A few years ago, knowing the tools was enough to win clients. Now anyone can follow a tutorial and build an agent in minutes, so technical skill on its own is commoditized.",
+    "What still separates people: a clear offer, a guarantee, real value, and the ability to talk to business owners.",
+    "Use AI to strip out busywork — research, drafting, delivery, admin — and spend the time saved on conversations.",
+    "Once you've chosen your road, stop collecting tutorials. More videos rarely lead to more clients."
+   ],
+   "tags": [
+    "sales",
+    "leverage",
+    "skills",
+    "focus",
+    "mindset",
+    "tutorials"
+   ],
+   "details": {
+    "Commoditized": "Technical build skill",
+    "Scarce": "Offer design and sales",
+    "Use AI for": "Research, drafting, delivery, admin"
+   },
+   "source": "Start a 1-Person Business with ChatGPT (Michele Torti, 4-hour course, Sept 2026)"
+  }
+ ]
+}

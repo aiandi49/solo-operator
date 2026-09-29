@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-font-size="md">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Engine — Solo Operator</title>
+<meta name="description" content="Describe your situation and get a tailored next step for running a one-person business with ChatGPT.">
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('pref-theme'),f=localStorage.getItem('pref-font-size');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(f==='sm'||f==='md'||f==='lg'||f==='xl')d.setAttribute('data-font-size',f);}catch(e){}})();</script>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/engine.css">
+<script src="assets/js/prefs.js" defer></script>
+<script src="assets/js/engine.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#composer-input">Skip to the message box</a>
+<div class="glow" aria-hidden="true"></div>
+
+<header class="bar">
+  <div class="bar__inner">
+    <a class="brand" href="index.html" aria-label="Solo Operator guide home">
+      <img src="assets/favicon.svg" alt="" width="28" height="28">
+      <span>Solo Operator <span class="brand__sub">Engine</span></span>
+    </a>
+    <nav class="bar__nav" aria-label="Main">
+      <a href="index.html">Guide</a>
+      <a href="engine.html" aria-current="page">Engine</a>
+    </nav>
+    <div class="prefs" role="group" aria-label="Display settings">
+      <div class="size-group" role="group" aria-label="Text size">
+        <button type="button" class="size-btn size-btn--sm" data-size="sm" aria-pressed="false" aria-label="Small text">A</button>
+        <button type="button" class="size-btn size-btn--md" data-size="md" aria-pressed="true" aria-label="Medium text (selected)">A</button>
+        <button type="button" class="size-btn size-btn--lg" data-size="lg" aria-pressed="false" aria-label="Large text">A</button>
+        <button type="button" class="size-btn size-btn--xl" data-size="xl" aria-pressed="false" aria-label="Extra large text">A</button>
+      </div>
+      <button type="button" class="theme-btn" aria-pressed="true" aria-label="Switch to light theme">
+        <svg class="theme-btn__moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        <svg class="theme-btn__sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+        <span class="theme-btn__text">Light</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="board" id="main">
+  <section class="panel panel--chat" aria-labelledby="chat-title">
+    <div class="panel__head">
+      <h1 id="chat-title">Chat</h1>
+      <button type="button" class="link-btn" id="reset-btn">Start over</button>
+    </div>
+    <div class="log" id="log" role="log" aria-live="polite" aria-relevant="additions" tabindex="0" aria-label="Conversation"></div>
+    <form class="composer" id="composer" novalidate>
+      <label class="composer__label" for="composer-input">Your message</label>
+      <textarea id="composer-input" class="composer__input" rows="3" maxlength="2000" placeholder="What are you trying to build or fix? Who is it for, and what's stuck?"></textarea>
+      <div class="composer__row">
+        <p class="composer__status" id="status" aria-live="polite"></p>
+        <button type="submit" class="send-btn" id="send-btn">Send</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="panel panel--top" aria-labelledby="top-title">
+    <div class="panel__head"><h2 id="top-title">Top match</h2></div>
+    <div id="top-body" class="panel__body"></div>
+  </section>
+
+  <section class="panel panel--short" aria-labelledby="short-title">
+    <div class="panel__head"><h2 id="short-title">Shortlist</h2></div>
+    <div class="gauge" id="gauge">
+      <svg class="gauge__svg" viewBox="0 0 120 120" role="img" aria-labelledby="gauge-label">
+        <title id="gauge-label">Top match score: none yet</title>
+        <defs>
+          <linearGradient id="gauge-grad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#6366f1"/>
+            <stop offset="0.55" stop-color="#a855f7"/>
+            <stop offset="1" stop-color="#f472b6"/>
+          </linearGradient>
+        </defs>
+        <circle class="gauge__track" cx="60" cy="60" r="48"/>
+        <circle class="gauge__value" id="gauge-value" cx="60" cy="60" r="48" stroke-dasharray="0 301.6" transform="rotate(-90 60 60)"/>
+      </svg>
+      <div class="gauge__center" aria-hidden="true">
+        <span class="gauge__num" id="gauge-num">–</span>
+        <span class="gauge__cap">top score</span>
+      </div>
+    </div>
+    <div id="short-body" class="panel__body"></div>
+  </section>
+
+  <section class="panel panel--details" aria-labelledby="details-title">
+    <div class="panel__head"><h2 id="details-title">Listing details</h2></div>
+    <div id="details-body" class="panel__body"></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Answers come from an AI model reading this site's guide. They can be wrong, so open the linked guide entry before acting on anything important. Your conversation is kept only in this browser tab and is cleared when you close it.</p>
+</footer>
+</body>
+</html>

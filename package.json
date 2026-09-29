@@ -1,0 +1,10 @@
+{
+  "name": "solo-operator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Solo Operator: a guide and engine for running a one-person business with ChatGPT.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  }
+}
