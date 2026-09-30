@@ -175,6 +175,8 @@
     // Gauge + shortlist
     var score = top ? top.score : 0;
     gaugeValue.setAttribute("stroke-dasharray", (CIRC * score / 100).toFixed(1) + " " + CIRC.toFixed(1));
+    // A zero-length stroke with round caps still paints a dot, so hide the arc when there's no score.
+    gaugeValue.setAttribute("visibility", score > 0 ? "visible" : "hidden");
     gaugeNum.textContent = top ? String(score) : "–";
     gaugeLabel.textContent = top ? "Top match score: " + score + " out of 100" : "Top match score: none yet";
 
