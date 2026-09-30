@@ -6,7 +6,8 @@ import path from "node:path";
 const MAX_BODY_BYTES = 32 * 1024;
 const MAX_MESSAGES = 30;
 const MAX_MESSAGE_CHARS = 4000;
-const MAX_TOKENS = 1200;
+const MAX_TOKENS = 4000; // covers adaptive thinking + reply (thinking counts toward max_tokens)
+const EFFORT = "medium"; // chat is latency-sensitive; medium keeps thinking short
 const UPSTREAM_TIMEOUT_MS = 25000; // below maxDuration (30s) in vercel.json
 const DEFAULT_MODEL = "claude-sonnet-5-5";
 const RATE_WINDOW_MS = 10 * 60 * 1000;
@@ -250,6 +251,7 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         model: process.env.ANTHROPIC_MODEL || DEFAULT_MODEL,
         max_tokens: MAX_TOKENS,
+        output_config: { effort: EFFORT },
         system,
         messages: cleaned.messages,
       }),
@@ -263,6 +265,7 @@ export default async function handler(req, res) {
     const reply = Array.isArray(data.content)
       ? data.content.filter((b) => b && b.type === "text" && typeof b.text === "string").map((b) => b.text).join("\n").trim()
       : "";
+    if (data.stop_reason === "max_tokens") console.error("chat: upstream stop max_tokens");
     if (!reply) {
       console.error("chat: upstream empty 502");
       return send(res, 502, { error: MSG_GENERIC_502 });
